@@ -18,7 +18,7 @@ class DingTalk
      * Create a new DingTalk instance.
      *
      * @param  string  $hook
-     * @param  mixed  $channel
+     * @param  bool  $atAll
      * @param  string  $message
      * @return void
      */
@@ -33,9 +33,8 @@ class DingTalk
      * Create a new DingTalk message instance.
      *
      * @param  string  $hook
-     * @param  mixed   $channel
+     * @param  bool   $atAll
      * @param  string  $message
-     * @param  array  $options
      * @return \Laravel\Envoy\DingTalk
      */
     public static function make($hook, $atAll = '', $message = null)
